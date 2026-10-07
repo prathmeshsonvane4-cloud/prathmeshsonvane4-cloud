@@ -12,11 +12,19 @@ Right now I am working on satellite augmented rating curve analysis for flood di
 
 Mapped 463 km2 of flood extent during the June 2022 Assam floods from Sentinel-1 SAR, at a point when cloud cover left optical imagery unusable. Speckle filtering, before and during change detection, permanent water removal with JRC Global Surface Water, terrain filtering with SRTM. Delivered as GeoTIFF and GeoJSON, ready for downstream exposure and damage assessment.
 
+**[Machine learning bias correction of reanalysis soil moisture](https://github.com/prathmeshsonvane4-cloud/soil-moisture-ml-era5)**
+
+ERA5-Land gives soil moisture everywhere and continuously, but it drifts from what is happening at a given site. Training on the full meteorology rather than the soil moisture variable alone lifted test R2 from 0.73 to 0.82 and cut RMSE by 20 percent at an AmeriFlux tower in California. Checked against SMAP satellite retrievals the model never saw during training. It still underestimates the wet peaks, which is the part that matters for runoff.
+
 **[Stochastic streamflow modelling, Godavari basin](https://github.com/prathmeshsonvane4-cloud/stochastic-hydrology-godavari)**
 
 Four decades of daily streamflow from catchment 3005 (Ashti), Maharashtra. ARMA(1,1) model and synthetic generator, validated with residual white noise tests. The honest limitation is that none of the models capture the monsoon extremes, which is the part that matters most for flood and reservoir planning.
 
-**[AmeriFlux tower data analysis](https://github.com/prathmeshsonvane4-cloud/Ameriflux-tower-data-analyasis)**
+**[Irrigation allocation under rainfall uncertainty](https://github.com/prathmeshsonvane4-cloud/irrigation-scheduling-optimization)**
+
+A linear programme that decides, for each day of a 153 day rice season, how much water to draw from a pond and how much from a borewell. It meets full crop demand with zero deficit while leaning on rainfall first and groundwater last. Worth stating plainly: zero deficit means the constraints were not binding for this site and season, so the interesting test is a drought year.
+
+**[AmeriFlux tower data analysis](https://github.com/prathmeshsonvane4-cloud/ameriflux-flux-tower-analysis)**
 
 Energy balance closure at the Ozark site and dry versus wet diurnal flux partitioning at Sevilleta, across five contrasting US ecoregions.
 
