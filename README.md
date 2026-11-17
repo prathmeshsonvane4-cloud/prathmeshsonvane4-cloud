@@ -30,11 +30,11 @@ Energy balance closure at the Ozark site and dry versus wet diurnal flux partiti
 
 ### Not public
 
-**Kshetra** is a satellite crop and water intelligence platform for agricultural lending. Two services run on it: a farmer climate intelligence report built from multi year vegetation, water and rainfall trends, and village scale water balance and recharge stress analysis organised by water year.
+**Kshetra** is a satellite crop and water monitoring project, built as a course project for Remote Sensing and GIS in Water Resources Engineering at IISc. It has two parts: crop monitoring built from multi year vegetation, water and rainfall trends, and village scale water balance and recharge stress analysis organised by water year.
 
-It is running with a district cooperative bank in Latur, and across 141 village catchments in Maski taluka, Raichur.
+It covers 141 village catchments in Maski taluka, Raichur.
 
-The repository is private because the work is commercial. Happy to walk through the architecture and the hydrology engine on a call.
+The repository is private. Happy to walk through the architecture and the hydrology engine on a call.
 
 ### Tools
 
